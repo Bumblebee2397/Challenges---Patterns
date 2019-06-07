@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int i,j,k,n,l,p,count=1;
+    cin>>n;
+
+    for(i=1;i<=n;i++){
+
+        for(j=1;j<=i;j++){
+            
+            cout<<count<<"  ";
+            count++;
+        }
+
+        for(k=(2*n-1)-(2*i);k>=1;k--)
+            cout<<"   ";  
+
+        if(i==n){
+            count--;
+
+            for(p=1;p<=i-1;p++){
+            count--;
+            cout<<count<<"  ";
+            }
+        }
+
+        else{
+        for(l=1;l<=i;l++){
+            count--;
+            cout<<count<<"  ";
+        }
+    }
+        count=1;
+        cout<<endl;
+    }
+
+
+return 0;
+}
