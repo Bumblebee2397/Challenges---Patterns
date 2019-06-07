@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int n,i,j,k,count=2;
+    cin>>n;
+
+    if(n==1)
+        cout<<1;
+
+    else if(n==2)
+        cout<<1<<endl<<11;
+
+    else if(n>=3){
+
+        cout<<1<<endl<<11<<endl;
+        
+        for(i=3;i<=n;i++){
+
+            cout<<count;
+
+            for(k=1;k<=i-2;k++)
+                cout<<0;
+
+            cout<<count;
+
+            count++;
+            cout<<endl;
+            }
+
+                cout<<endl;  //for newline to change to next row
+            }
+
+            
+            
+
+return 0;
+ }   
